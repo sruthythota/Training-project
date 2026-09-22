@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Bean Cafe — Where Every Cup Blossoms With Joy ✨</title>
+    <meta name="description"
+        content="Welcome to Bloom & Bean Cafe! A cozy pastel cafe serving handcrafted organic coffees, artisanal pastries, and specialty floral drinks in a dreamy environment.">
+
+    <!-- Google Fonts: Fredoka for playful headers, Nunito for soft body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Floating Toast Notification Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo-link" id="nav-logo">
+                <span class="logo-icon" aria-hidden="true">🌸</span>
+                <span class="logo-text">Bloom <span class="logo-amp">&amp;</span> Bean</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA Button in Header -->
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-sm btn-primary">Order Online ☕</a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu"
+                    aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-blobs" aria-hidden="true">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="badge hero-badge bounce-soft">
+                        <span class="badge-icon">✨</span> Handcrafted Fresh Every Morning
+                    </div>
+
+                    <h1 class="hero-title">
+                        Where Every Cup <span class="highlight-pastel-pink">Blossoms</span> With <span
+                            class="highlight-pastel-mint">Warmth &amp; Joy</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Step into our pastel sanctuary of artisanal coffee, freshly baked fruit pastries, and dreamy
+                        floral teas
+                        brewed with organic love.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-lg btn-primary shadow-glow">
+                            <span>View Menu ☕</span>
+                        </a>
+                        <a href="#about" class="btn btn-lg btn-secondary">
+                            <span>Our Story 🌸</span>
+                        </a>
+                    </div>
+
+                    <!-- Hero Quick Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-pill">
+                            <span class="stat-emoji">⭐</span>
+                            <div>
+                                <strong>4.9 / 5.0</strong>
+                                <small>1,200+ Happy Guests</small>
+                            </div>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-emoji">🌿</span>
+                            <div>
+                                <strong>100% Organic</strong>
+                                <small>Fair-Trade Beans</small>
+                            </div>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-emoji">🍰</span>
+                            <div>
+                                <strong>Baked Daily</strong>
+                                <small>Artisanal Treats</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-card-frame">
+                        <img src="images/hero_cafe.jpg"
+                            alt="Cozy pastel interior of Bloom & Bean Cafe with warm fairy lights and coffee on table"
+                            class="hero-img">
+                        <div class="floating-card floating-card-1 bounce-floating">
+                            <span class="fc-icon">☕</span>
+                            <div class="fc-text">
+                                <span class="fc-title">Signature Matcha</span>
+                                <span class="fc-sub">Vanilla Cloud Foam</span>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-2 pulse-soft">
+                            <span class="fc-icon">🥐</span>
+                            <div class="fc-text">
+                                <span class="fc-title">Warm Berry Croissants</span>
+                                <span class="fc-sub">Fresh from the oven</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+
+                <div class="section-header text-center reveal-on-scroll">
+                    <div class="section-tag">
+                        <span class="tag-icon">🍰</span> Sweet &amp; Savory Delights
+                    </div>
+                    <h2 class="section-title">Our Playful Menu</h2>
+                    <p class="section-subtitle">
+                        Handcrafted with organic ingredients, velvety milk, and a pinch of happiness.
+                    </p>
+                </div>
+
+                <!-- Menu Filter Tabs -->
+                <div class="menu-tabs reveal-on-scroll">
+                    <button class="tab-btn active" data-filter="all">
+                        <span class="tab-icon">✨</span> All Delights
+                    </button>
+                    <button class="tab-btn" data-filter="coffee">
+                        <span class="tab-icon">☕</span> Specialty Coffee
+                    </button>
+                    <button class="tab-btn" data-filter="drinks">
+                        <span class="tab-icon">🍵</span> Tea &amp; Boba
+                    </button>
+                    <button class="tab-btn" data-filter="bakery">
+                        <span class="tab-icon">🥐</span> Bakery
+                    </button>
+                    <button class="tab-btn" data-filter="sweets">
+                        <span class="tab-icon">🍓</span> Sweets &amp; Cakes
+                    </button>
+                </div>
+
+                <!-- Menu Cards Grid -->
+                <div class="menu-grid" id="menu-grid">
+
+                    <!-- Item 1: Matcha Cloud Latte -->
+                    <article class="menu-card reveal-on-scroll" data-category="drinks">
+                        <div class="card-image-box">
+                            <img src="images/matcha_latte.jpg" alt="Cloud Matcha Latte in glass mug" class="card-img"
+                                loading="lazy">
+                            <span class="badge card-badge badge-mint">Popular 🌟</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Cloud Matcha Latte</h3>
+                                <span class="card-price">$6.50</span>
+                            </div>
+                            <p class="card-desc">
+                                Ceremonial Uji matcha layered with organic oat milk and topped with fluffy vanilla bean
+                                cloud foam.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">🌿 Vegan Option</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Cloud Matcha Latte">
+                                    Order ☕
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 2: Berry Croissant -->
+                    <article class="menu-card reveal-on-scroll" data-category="bakery">
+                        <div class="card-image-box">
+                            <img src="images/croissant.jpg" alt="Freshly baked berry croissant with powdered sugar"
+                                class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-peach">Fresh Baked 🥐</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Artisan Berry Croissant</h3>
+                                <span class="card-price">$5.25</span>
+                            </div>
+                            <p class="card-desc">
+                                Flaky butter layers filled with house-made wild raspberry compote &amp; dusted with
+                                vanilla sugar.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">🧈 French Butter</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Artisan Berry Croissant">
+                                    Order 🥐
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 3: Strawberry Shortcake -->
+                    <article class="menu-card reveal-on-scroll" data-category="sweets">
+                        <div class="card-image-box">
+                            <img src="images/strawberry_cake.jpg" alt="Pastel strawberry shortcake slice"
+                                class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-pink">Chef Special 🍰</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Strawberry Cloud Cake</h3>
+                                <span class="card-price">$7.00</span>
+                            </div>
+                            <p class="card-desc">
+                                Fluffy Japanese chiffon cake layered with fresh organic strawberries and light sweet
+                                whipped cream.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">🍓 Organic Berries</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Strawberry Cloud Cake">
+                                    Order 🍰
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 4: Rose Gold Latte -->
+                    <article class="menu-card reveal-on-scroll" data-category="coffee">
+                        <div class="card-image-box">
+                            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80"
+                                alt="Rose Gold Latte with rose petals" class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-lavender">Signature 🌹</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Rose Petal Cappuccino</h3>
+                                <span class="card-price">$6.25</span>
+                            </div>
+                            <p class="card-desc">
+                                Double shot blonde espresso infused with organic Damask rose water and steamed velvet
+                                oat milk.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">☕ Blonde Espresso</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Rose Petal Cappuccino">
+                                    Order ☕
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 5: Lavender Taro Boba -->
+                    <article class="menu-card reveal-on-scroll" data-category="drinks">
+                        <div class="card-image-box">
+                            <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=600&q=80"
+                                alt="Lavender Taro Milk Tea with Boba" class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-lavender">Pastel Special 🧋</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Lavender Taro Boba</h3>
+                                <span class="card-price">$6.75</span>
+                            </div>
+                            <p class="card-desc">
+                                Creamy taro root brewed with lavender honey, served over chewy brown sugar boba pearls.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">🧋 Brown Sugar Boba</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Lavender Taro Boba">
+                                    Order 🧋
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 6: Honey Vanilla Cold Brew -->
+                    <article class="menu-card reveal-on-scroll" data-category="coffee">
+                        <div class="card-image-box">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80"
+                                alt="Cold Brew with Cream" class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-mint">Refreshing 🧊</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Honey Mint Cold Brew</h3>
+                                <span class="card-price">$5.75</span>
+                            </div>
+                            <p class="card-desc">
+                                18-hour slow steep cold brew sweetened with local raw honey and garnished with crushed
+                                fresh mint.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">🧊 18-Hr Steep</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Honey Mint Cold Brew">
+                                    Order ☕
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 7: Pastel Macaron Set -->
+                    <article class="menu-card reveal-on-scroll" data-category="sweets">
+                        <div class="card-image-box">
+                            <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=600&q=80"
+                                alt="Pastel French macarons box" class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-pink">Gift Box 🎁</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Pastel Macaron Box (Set of 6)</h3>
+                                <span class="card-price">$12.50</span>
+                            </div>
+                            <p class="card-desc">
+                                Flavors include Pistachio Mint, Rose Water, Vanilla Cream, Lavender Honey, Peach Blossom
+                                &amp;
+                                Raspberry.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">✨ Gluten Free</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Pastel Macaron Box">
+                                    Order 🎁
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Item 8: Avocado Pistachio Toast -->
+                    <article class="menu-card reveal-on-scroll" data-category="bakery">
+                        <div class="card-image-box">
+                            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
+                                alt="Artisanal Avocado Toast" class="card-img" loading="lazy">
+                            <span class="badge card-badge badge-peach">Savory 🥑</span>
+                            <button class="heart-btn" aria-label="Add to favorites" title="Add to favorites">
+                                <span class="heart-icon">💖</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Bloom Avocado Toast</h3>
+                                <span class="card-price">$8.50</span>
+                            </div>
+                            <p class="card-desc">
+                                Sourdough toast topped with smashed Hass avocado, crushed pistachios, microgreens, and
+                                lemon zest.
+                            </p>
+                            <div class="card-footer-row">
+                                <span class="dietary-tag">🥑 Sourdough</span>
+                                <button class="btn btn-sm btn-outline order-btn" data-name="Bloom Avocado Toast">
+                                    Order 🥑
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-images-wrapper reveal-on-scroll">
+                        <div class="about-card-stack">
+                            <div class="about-img-box main-about-img">
+                                <img src="images/hero_cafe.jpg" alt="Bloom & Bean Cafe interior storytelling"
+                                    class="about-img">
+                            </div>
+                            <div class="about-badge-card wiggle-soft">
+                                <span class="abc-icon">🌷</span>
+                                <div>
+                                    <strong>Est. 2023</strong>
+                                    <small>Neighborhood Sanctuary</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-on-scroll">
+                        <div class="section-tag">
+                            <span class="tag-icon">💖</span> Our Warm Story
+                        </div>
+                        <h2 class="section-title">A Cozy Nook Where Coffee &amp; Kindness Bloom</h2>
+
+                        <p class="about-text">
+                            Bloom &amp; Bean began with a simple dream: to create a soft, sunny space where time slows
+                            down, coffee
+                            tastes like a warm hug, and every corner brings a smile.
+                        </p>
+                        <p class="about-text">
+                            We roast our single-origin organic beans in small micro-batches, pair them with
+                            house-infused floral
+                            syrups, and bake our pastries fresh every sunrise. Whether you’re catching up with friends,
+                            reading a
+                            favorite book, or taking a peaceful moment for yourself — you’re always family here.
+                        </p>
+
+                        <div class="about-features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon-box icon-pink">🌱</div>
+                                <div>
+                                    <h4>100% Organic</h4>
+                                    <p>Ethically sourced fair-trade beans.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-box icon-mint">🥐</div>
+                                <div>
+                                    <h4>Baked Daily</h4>
+                                    <p>Artisanal pastries made from scratch.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-box icon-lavender">🐾</div>
+                                <div>
+                                    <h4>Pet Friendly</h4>
+                                    <p>Sunny patio welcoming cozy pets.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-box icon-peach">♻️</div>
+                                <div>
+                                    <h4>Eco Packaging</h4>
+                                    <p>100% compostable cups &amp; straws.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-box">
+                            <p class="quote-text">
+                                "We don't just brew coffee; we brew cozy memories."
+                            </p>
+                            <span class="quote-author">— Clara &amp; Leo, Cafe Founders ☕</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section section-padding" id="gallery">
+            <div class="container">
+
+                <div class="section-header text-center reveal-on-scroll">
+                    <div class="section-tag">
+                        <span class="tag-icon">📸</span> Visual Moments
+                    </div>
+                    <h2 class="section-title">Our Pastel Paradise</h2>
+                    <p class="section-subtitle">
+                        Click any picture to expand and explore the cozy details!
+                    </p>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-card reveal-on-scroll" data-fullsrc="images/hero_cafe.jpg"
+                        data-title="Sunny Cafe Dining Corner">
+                        <img src="images/hero_cafe.jpg" alt="Sunny dining table with coffee and pastries"
+                            class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">🔍</span>
+                            <span class="gallery-caption">Sunny Cafe Corner</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-card reveal-on-scroll" data-fullsrc="images/matcha_latte.jpg"
+                        data-title="Fresh Matcha Cloud Latte">
+                        <img src="images/matcha_latte.jpg" alt="Matcha Cloud Latte" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">🍵</span>
+                            <span class="gallery-caption">Matcha Cloud Foam</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-card reveal-on-scroll" data-fullsrc="images/croissant.jpg"
+                        data-title="Freshly Baked Berry Croissant">
+                        <img src="images/croissant.jpg" alt="Berry Croissant" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">🥐</span>
+                            <span class="gallery-caption">Berry Butter Croissant</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-card reveal-on-scroll" data-fullsrc="images/strawberry_cake.jpg"
+                        data-title="Strawberry Layer Cake">
+                        <img src="images/strawberry_cake.jpg" alt="Strawberry Shortcake" class="gallery-img"
+                            loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">🍰</span>
+                            <span class="gallery-caption">Strawberry Chiffon</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-card reveal-on-scroll"
+                        data-fullsrc="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80"
+                        data-title="Artisanal Espresso Brewing">
+                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80"
+                            alt="Espresso machine pouring golden coffee" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">☕</span>
+                            <span class="gallery-caption">Espresso Extraction</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-card reveal-on-scroll"
+                        data-fullsrc="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80"
+                        data-title="Pastel Decor &amp; Flower Vases">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80"
+                            alt="Pastel cafe interior flowers and table" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">🌸</span>
+                            <span class="gallery-caption">Flower &amp; Sunlight</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Lightbox Modal -->
+        <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+            <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+            <div class="lightbox-content">
+                <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close modal">&times;</button>
+                <div class="lightbox-img-container">
+                    <img src="" alt="" id="lightbox-img">
+                </div>
+                <p class="lightbox-title" id="lightbox-title"></p>
+            </div>
+        </div>
+
+        <!-- Contact & Footer Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+
+                <div class="contact-grid">
+
+                    <!-- Hours & Location Box -->
+                    <div class="contact-card hours-card reveal-on-scroll">
+                        <div class="contact-card-icon">📍</div>
+                        <h3>Visit Our Cafe</h3>
+                        <p class="contact-address">
+                            142 Blossom Avenue, Suite 4<br>
+                            Rosewood Neighborhood, CA 90210
+                        </p>
+                        <hr class="card-divider">
+                        <div class="hours-list">
+                            <h4>Opening Hours 🕒</h4>
+                            <div class="hours-row">
+                                <span>Monday — Friday:</span>
+                                <strong>7:00 AM – 7:00 PM</strong>
+                            </div>
+                            <div class="hours-row">
+                                <span>Saturday — Sunday:</span>
+                                <strong>8:00 AM – 8:00 PM</strong>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-sm btn-secondary full-width mt-4">
+                            Get Directions 🗺️
+                        </a>
+                    </div>
+
+                    <!-- Contact Details & Newsletter -->
+                    <div class="contact-card newsletter-card reveal-on-scroll">
+                        <div class="contact-card-icon">💌</div>
+                        <h3>Join The Coffee Club</h3>
+                        <p class="newsletter-desc">
+                            Subscribe to get secret menu updates, seasonal discount codes, and cozy coffee recipes sent
+                            straight to
+                            your inbox!
+                        </p>
+
+                        <form class="newsletter-form" id="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" id="email-input" class="newsletter-input"
+                                    placeholder="Enter your email address..." required aria-label="Email address">
+                                <button type="submit" class="btn btn-primary subscribe-btn">
+                                    Subscribe 🌸
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="social-connect">
+                            <h4>Follow Our Cozy Journey ✨</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-icon-btn instagram" aria-label="Instagram" title="Instagram">
+                                    <span>📸</span>
+                                </a>
+                                <a href="#" class="social-icon-btn tiktok" aria-label="TikTok" title="TikTok">
+                                    <span>🎵</span>
+                                </a>
+                                <a href="#" class="social-icon-btn pinterest" aria-label="Pinterest" title="Pinterest">
+                                    <span>📌</span>
+                                </a>
+                                <a href="#" class="social-icon-btn facebook" aria-label="Facebook" title="Facebook">
+                                    <span>💬</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo-link">
+                    <span class="logo-icon">🌸</span>
+                    <span class="logo-text">Bloom &amp; Bean</span>
+                </a>
+                <p class="footer-tagline">Crafting cozy moments, one cup at a time.</p>
+            </div>
+
+            <div class="footer-center">
+                <p class="copyright">
+                    &copy; 2026 Bloom &amp; Bean Cafe. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+                    Top ⬆️
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
